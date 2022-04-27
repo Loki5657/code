@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pushpop</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="num">
+    </div>
+
+    <button onclick=" push()">Push</button>
+    <button onclick=" pop()">Pop</button>
+    <button onclick=" shift()">Shift</button>
+    <button onclick=" log()">Log</button>
+    <button onclick=" sum()">Sum</button>
+    <script>
+        var num, array, total=0;
+
+        array = new Array();
+
+        function push() {
+        num = Number(document.getElementById("num").value);
+
+            array.push(num)
+
+            console.log(array)
+
+
+        }
+        function pop() {
+            var num = Number(document.getElementById("num").value);
+            array.pop(num)
+
+            console.log(array)
+
+
+        }
+        function shift() {
+            var num = Number(document.getElementById("num").value);
+
+            var shifted = array.shift();
+            console.log("shifted value", array)
+
+            console.log(array)
+
+
+        }
+        function log() {
+
+
+            console.log(array)
+
+
+        }
+        function sum() {
+            // num = Number(document.getElementById("num").value);
+            // total=+num;
+            // console.log(total)
+            // var num = Number(document.getElementById("num").value);
+
+            for (let i = 0; i < array.length; i++) {
+                total += Number(array[i]);
+            }
+            console.log(total)
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

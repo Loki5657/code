@@ -1,0 +1,13 @@
+body{
+    background: url(../javascript/image.png) no-repeat;
+    background-size: cover;
+}
+#num{
+    width: 30%;
+    margin-left: 35%;
+   
+}
+
+.hi{
+    text-align: center;
+}

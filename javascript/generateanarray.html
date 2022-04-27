@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generateanarray</title>
+</head>
+
+
+<body>
+
+
+    <div>
+        <input type="text" id="num1" placeholder="Enter a value" />
+    </div>
+    <button onclick=" Genereate()">Genereate</button>
+    <script>
+        function Genereate() {
+            var arr = '';
+            var num1 = Number(document.getElementById("num1").value);
+            console.log("entered number is :", num1)
+            if (num1 > 0) {
+                arr = new Array(num1)
+                for (var i = 0; i < num1; i++) {
+
+                    arr[i] = parseInt((Math.random() * 10) + 1);
+
+                }
+                console.log(arr);
+
+            }
+            // console.log("entered number is :", num)
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

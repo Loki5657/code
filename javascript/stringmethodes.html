@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <div style="margin-bottom: 100px;">
+        <input type="text" id="num">
+        <button onclick=" Task()">Task</button>
+    </div>
+    <div style="margin-bottom: 100px;">
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+
+        <button onclick=" Check()">Check</button>
+    </div>
+
+
+    <div style="margin-bottom: 100px;">
+        <div>
+            <input type="text" id="num4">
+        </div>
+
+        <button onclick=" Print()">print</button>
+    </div>
+
+
+
+    <script>
+        var num;
+        var array = new Array();
+        function Task() {
+            num = document.getElementById("num").value;
+
+            for (var i = 0; i < num.length; i++) {
+                console.log(num[i])
+                // array.push(arr[i]);
+                if (i % 2 != 0) {
+                    array = array + num[i]
+                }
+            }
+            console.log(array)
+        }
+        function Check() {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            // console.log(num1)
+            // console.log(num2)
+
+
+           
+            for (let i = 0; i < num1.length; i++) {
+                if (!(num2.includes(num1[i]))) {
+                    //    if(res.includes(num1[i])){
+                        array.push(num1[i])
+                    //    }
+                    // console.log(res)
+                }
+            }
+            for (let i = 0; i < num2.length; i++) {
+                if (!(num1.includes(num2[i]))) {
+                    array.push(num2[i])
+                    // console.log(res)
+                }
+            }
+
+            console.log(array)
+
+        }
+
+        function Print() {
+            var arr = new Array()
+            num = document.getElementById("num4").value;
+            // arr.push(num)
+            console.log(num)
+
+
+            if (num) {
+                var obj = {};
+                for (var i = 0; i < num.length; i++) {
+                    if (obj[num[i]]) {
+                        obj[num[i]] += obj[num[i]];
+                    } else {
+                        obj[num[i]] = '*';
+                    }
+                }
+                console.log(obj);
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

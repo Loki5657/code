@@ -1,0 +1,341 @@
+.main{
+    display: flex;
+   
+    
+    
+    }
+    .middle{
+        margin-left: 220px;
+    }
+    .first_div{
+        margin-left: 2px;
+    }
+    .logo_img{
+        width: 110px;
+        height: 38px;
+        margin-left: 98px;
+        margin-top: -10px;
+        display: inline;
+      
+        
+    }
+    .link_Technician{
+        color: #198754;
+        margin-left: -115px;
+    }
+    .main_clss{
+        margin-top: 10px;
+        width: auto;
+        
+    }
+    .title_component{
+        font-weight: bold;
+        margin-left: 170px;
+    }
+    .title_component1{
+        font-weight: bold;
+        margin-left: 157px;
+    }
+    .title_component2 {
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    
+    .profile_img{
+        height: 30px;
+        width: 30px;
+        margin-left: 160px;
+    }
+    .profile{
+        height: 25px;
+        width: 25px;
+        margin-left:-150px;
+    }
+    .profile_component{
+        width: 85px;
+        margin-left: -145px;
+    }
+    .tech_info{
+      margin-bottom: 10px;
+      margin-left: -35px;
+    margin-top: 0px;
+        color:rgba(0, 0, 0, 0.404) ;
+        font: bold;
+        /* padding-top: 10px; */
+    }
+    .mail_component1{
+    
+        display: inline;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .mail_component{
+        display: inline;
+        font-weight: bold;
+  
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .btn_clss{
+        padding-left: 40px;
+        position: relative;
+        margin-left: -4px;
+    }
+    .btn_clss4{
+        padding-left: 40px;
+        position: relative;
+        margin-left: -77px;
+    }
+    .mig_div{
+        position: relative;
+        margin-left: -10px;
+    }
+    .img_div{
+        position: absolute;
+        top: 7px;
+        left: 107px;
+    }
+    .doc_component1{
+        display: inline;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .doc_component{
+        display: inline;
+        font-weight: bold;
+        margin-left: 70px;
+        font-size: 15px;
+    }
+    .eye_component1{
+        display: inline;
+        font-weight: bold;
+        margin-left: 120px;
+        font-size: 15px;
+    }
+    .eye_component{
+        display: inline;
+        font-weight: bold;
+       margin-left: 5px;
+        font-size: 15px;
+    }
+    
+    .upload_add{
+        position: relative;
+        margin-top: 20px;
+    }.upload_div{
+        position: absolute;
+        top: 7px;
+        left: 110px;
+    }
+    .main_clss{
+    position: relative;
+    margin: 10px;
+    }
+    .inner_div{
+      
+        /* top: 100px;
+        right: 10px;
+        */
+        margin-top: 35px;
+       width: 800px;
+    }
+    
+    .bd_profile{
+        height: 75px;
+        margin-top: -13px;
+        margin-left: -180px;
+    }
+    .name_img{
+        margin: 50px;
+    }
+    .name{
+        display: inline;
+        padding-left: -20px;
+    
+    }
+    .name1{
+      display: inline;
+      margin-left: -75px;
+  
+  }
+    .posrel{
+        position: relative;
+        margin: 25px;
+    }
+    .img_upload{
+        position: absolute;
+        top: 11px;
+        left: 85px;
+    }
+    .btn_clss1{
+        padding-left: 40px;
+        position: relative;
+        color: #0fe244;
+        background-color: #ffffff;
+        font-weight: bold;
+        margin-left: -6px;
+        padding: 8px 125px;
+    
+    
+    }
+    .name_clss{
+      position: absolute;
+      top: 15px;
+      left: 55px;
+      /* padding-top: 20px; */
+    
+        /* margin: 20px;
+        margin-top: 10px;
+         border-radius: 10px;
+        border: 1px solid #8080802f; */
+  
+    }
+    .btn_clss2{
+        
+            /* padding-left: 40px;
+            margin-left: 70px;
+            padding: 10px 8px; */
+            margin-left: -8px;
+            padding: 10px 164px;
+            font-weight: bold;
+        
+    }
+    .border_compo{
+      position: relative;
+        border: 1px solid #80808017;
+        border-radius: 11px;
+        margin-top: 9px;
+        padding: 10px 10px;
+    }
+    .name_clss2{
+        /* margin: 20px; */
+        /* border: 1px solid #8080802f; */
+         border-radius: 10px;
+        display: inline;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    
+      .name_clss3{
+        /* margin: 20px; */
+        /* border: 1px solid #8080802f; */
+        margin-top: 9px;
+        padding: 10px 10px;
+    }
+    
+    .eye_component2{
+        display: inline;
+        font-weight: bold;
+        margin-left: 170px;   
+        font-size: 15px;
+      
+    }
+    .hr_btum{
+        border-bottom: 0px solid #dee2e6;
+        
+    }
+    td,tr{
+        margin-left: 15px;
+    }
+    td{
+        padding: 0.5rem 1.5rem !important;
+    }
+    .clss_compo{
+     margin-top: 90px;
+     
+    }
+    .div_compon{
+        margin-left: 25px;
+    }
+    .mail_compo{
+        margin-top: 5px;
+      
+        /* margin-bottom: 5px; */
+    }
+    .mail-0{
+        margin-top: 9px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        
+    }
+    .name_tag{
+        font-size: 25px;
+        margin-left: -85px;
+    }
+    .img_clss3{
+      margin-left: 3px;
+    }
+    .hr_tag{
+        margin-left: 80px !important;
+        border-bottom: 1px solid rgba(240, 248, 255, 0.479);
+    
+    }
+    
+    .side_1{
+      font-weight: bold ;
+      margin-left: 30px;
+      margin-bottom: 6px;
+    }
+    .side_11{
+      font-weight: bold ;
+      margin-left: 33px;
+    }
+    .side_2{
+      font-weight: bold ;
+      margin-left: 65px;
+      margin-bottom: 6px;
+    }
+    .side_22{
+      font-weight: bold ;
+      margin-left: -15px;
+    }
+    .side_3{
+      font-weight: bold ;
+      margin-left: 61px;
+      margin-bottom: 6px;
+    }
+    .side_33{
+      font-weight: bold ;
+      margin-left: -15px;
+      margin-bottom: 6px;
+    }
+    .schedule_btn{
+        width: 380px;
+        height: 45px;
+        display: inline-block;
+        background-color: #ffffff83;
+        background-color: #ffffff00;
+        font-weight: bold;
+    
+    }
+    .service_btn{
+        width: 320px;
+        height: 45px;
+        font-weight: bold; 
+       
+    }
+    .bc_color{
+        height: 40px;
+        
+    }
+    .avg_42{
+      margin-left: 10px;
+       font-weight: bold;
+    }
+    .up_compo{
+      color: #198754;
+       font-weight: bold;
+      margin-top: 10px;
+    }
+    .hr_component{
+      display: flex;
+   justify-content: space-around;
+    }
+    .mail_compo1{
+      display: inline;
+  
+    }

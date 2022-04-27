@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Enter a value"/>
+    <button onclick="sum()">sum</button>
+    <script>
+  function sum()
+			{
+			
+		num = Number(document.getElementById("num").value);
+        var num;
+        var n1,n2,n3
+
+            n1=num%10;
+            console.log(n1)
+
+            num = Math.floor(num / 10);
+           
+            n2=num%10;
+            console.log(n2)
+
+            num = Math.floor(num / 10);
+            n3=num%10;
+            console.log(n3)
+            var out=num+n1;
+
+            // console.log(out)
+        
+            if(out==n2){
+                console.log("sum of  "+n1+" and "+n3 +"is equal to middle number"+n2)
+            }
+            else{
+                console.log("sum of  "+n1+" and "+n3 +"is not equal to middle number"+n2)
+            }
+        }
+    </script>
+    
+</body>
+</html>

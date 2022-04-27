@@ -1,0 +1,107 @@
+.background{
+    background: url(../images/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.error_mgs1{
+    margin-left: 65px;
+    color: #ff0000;
+
+}
+.border_clr{
+    border: 2px solid #ff0000;
+}
+
+.error_mgs{
+    color: #ff0000;
+}
+
+body{
+    margin: 0;
+}
+.gender_compo{
+    color: #ffffff;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+.block{
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.75;
+}
+.pic{
+    text-align: center;
+}
+.logo{
+    padding-top: 15px;
+}
+
+.create{
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.name{
+    position: relative;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+.textfield{
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+.absolute{
+    height: 10px;
+    position: absolute;
+    top: 32px;
+    left: 2px;
+    padding-left: 5px;
+}
+.name{
+    position: relative;
+    margin-top: 25px;
+}
+.absolute1{
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.email{
+    position: relative;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+.password{
+    position: relative;
+    margin-left: 60px;
+    padding-top: 12px;
+}
+
+.btn{
+    margin-left: 60px;
+    margin-top: 30px;
+    background-color: rgb(26,126,54);
+    height: 30px;
+    color: #ffffff;
+    width: 230px;
+}
+
+.link{
+    color: #ffffff;
+    position: fixed;
+    bottom: 5px;
+    left: 90px;
+}

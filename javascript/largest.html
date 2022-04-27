@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="num1" placeholder="Enter a value" />
+    </div>
+    <div>
+        <input type="text" id="num2" placeholder="Enter a value" />
+    </div>
+    <div></div>
+    <input type="text" id="num3" placeholder="Enter a value" />
+    </div>
+    <button onclick="largest()">Find Largest</button>
+    <script>
+        function largest() {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+            num3 = Number(document.getElementById("num3").value);
+            console.log(num1)
+
+            if (num1 > num2 && num1 > num3) {
+                console.log(num1 + "- is largest number among", num1, num2, num3);
+            }
+            else if (num2 > num1 && num2 > num3) {
+                console.log(num2 + "- is largest number among", num1, num2, num3);
+            }
+            else if (num3 > num1 && num3 > num1) {
+                console.log(num3 + "- is largest number among", num1, num2, num3);
+            }
+        }
+    </script>
+</body>
+
+</html>

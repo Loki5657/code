@@ -1,0 +1,108 @@
+.main_div{
+    margin-left: 20px;
+} 
+
+/* img{
+    float: left;
+    padding-left: 50px;
+    clear:left;
+} */
+
+.list{
+   display: flex;
+   list-style: none;
+   padding-top: 0px;
+   padding-left: 200px;
+}
+
+.list li{
+   padding:10px 0px 0px 100px;
+   color: black;
+   font-size: 20px;
+}
+hr{
+ border: 1px solid grey;
+}
+
+.profile_img{
+    margin-left: 50px;
+}
+
+
+
+.tech_component{
+  margin-left: 20px;
+  font-size: 55px;
+  margin: 10px;
+  
+}
+.add_btn{
+    margin-left: 18px;
+    width: 280px;
+    height: 50px;
+    background-color:#0d8d0d;
+    color: #ffffff;
+    border: 1px #ffffff;
+    border-radius:10px ;
+}
+.search_btn{
+    margin-top: 15px;
+    margin-left: 18px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    border-radius:10px ;
+    width: 225px;
+    padding-left: 50px;
+}
+.search_icon{
+    position: absolute;
+    top: 30px;
+    left: -15px;
+}
+.pos_rel{
+    position: relative;
+}
+.assing_compo{
+    position: absolute;
+    top: 80px;
+    left: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    height: 330px;
+    width: 280px;
+    border-radius:10px ;
+    
+}
+.assign_status{
+    margin-left: 26px;
+    color:rgba(0, 0, 0, 0.404) ;
+    font: bold;
+    padding-top: 10px;
+}
+.assign_not{
+    margin-left: 26px;
+    color:rgba(0, 0, 0, 0.692) ;
+    font: bold;
+    padding-top: 10px;
+
+}
+.line_compo{
+     width: 50px; 
+    margin-left: 27px;
+    margin-right: 27px;
+    margin-top: 60px;
+}
+.logo_img{
+    height: 46px;
+    width: 163px;
+}
+.abc{
+    margin-top: 20px;
+} 
+.inner_div{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 200px;
+    width: 200px;
+
+}
