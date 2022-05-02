@@ -11,72 +11,132 @@ function Technician() {
     const [tabledata, setTabledat] = useState({
         arr: [
             {
+                id: 1,
                 name: 'lokesh',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
             },
             {
+                id: 2,
                 name: 'pavan',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
             {
+                id: 3,
                 name: 'Lakshmi Reddy',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
             {
+                id: 4,
                 name: 'Rajashaker',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
             {
+                id: 5,
                 name: 'Rahul',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
             {
+                id: 6,
                 name: 'Satish',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
             {
+                id: 7,
                 name: 'vinay',
                 location: 'hyd',
-                phone_number:'1236547890'
+                phone_number: '1236547890'
 
 
             },
+            {
+                id: 8,
+                name: 'lokesh',
+                location: 'hyd',
+                phone_number: '1236547890'
+
+            },
+
         ],
-        showError: false
+        showError: false,
+
     })
+    const [isAdd, setIsAdd] = useState(true)
+
+    const SubmitTechnician = (e) => {
+        setIsAdd(true)
+        e.preventDefault()
+        const { arr } = tabledata;
+        if (isAdd) {
+            if (adddata) {
+
+                arr.push(adddata)
+                setTabledat({ ...tabledata, arr: arr })
+
+                const obj = {
+                    name: '',
+                    location: '',
+                    phone_number: ''
+                }
+                setAdddata(obj)
+
+            }
+        }
+        else {
+            let list = [];
+            console.log("in edit")
+            if (adddata.name && adddata.location && adddata.phone_number) {
+                console.log('name', adddata)
+                // for (let index of arr) {
+                //     if (index.id == adddata.id) {
+                //         list.push(adddata)
+                //     } else {
+                //         list.push(index)
+                //     }
+                // }
+                const getIndex = arr.findIndex((each) => each.id === adddata.id);
+                arr[getIndex] = adddata
+
+
+            }
+            setTabledat({ ...tabledata, arr: arr })
+
+        }
+
+       
+    }
     const [adddata, setAdddata] = useState({
         name: '',
         location: '',
-        phone_number:''
+        phone_number: ''
 
     })
     const Delete = (ele) => {
 
         const { arr } = tabledata;
         arr.splice(ele, 1)
-        console.log('deleted',ele)
+        console.log('deleted', ele)
         setTabledat({ ...tabledata, arr: arr })
     }
-    
-   
-   
+
+
+
     const AddTechnician = () => {
         console.log("we are in adding Technician ");
 
@@ -88,44 +148,26 @@ function Technician() {
 
     }
 
-    const SubmitTechnician = (e) => {
-        e.preventDefault()
-        let iserror = false
-        const { arr } = tabledata;
-
-        if (adddata.name) {
-            arr.push(adddata)
-        setTabledat({ ...tabledata, arr: arr })
-        
-        const obj = {
-            name: '',
-            location: '',
-            phone_number:''
-        }
-            setAdddata(obj)
-        }
-        if(!adddata.name || !adddata.location ||!adddata.phone_number ){
-            iserror=true;
-        }
-        
-        if (iserror) {
-            setTabledat({ ...tabledata, showError: true })
-
-        }
-    }
     // console.log("enterd data",adddata);
     const onlyNumbers = (e) => {
         const charCode = e.which ? e.which : e.keyCode;
         if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-          e.preventDefault();
-       
-    
+            e.preventDefault();
+
+
         }
         return true;
-    
-      }
 
-   
+    }
+    const Edit = (data) => {
+        setIsAdd(false)
+        setAdddata(data)
+        
+
+
+    }
+
+
 
     return (
         <div className="main_div">
@@ -162,6 +204,10 @@ function Technician() {
                             {/* <!-- Modal Header --> */}
                             <div className="modal-header">
                                 <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+                                {
+                                    isAdd ? <p className='title_name'>Add Customer</p> : <p className='title_name'>Edit Customer</p>
+
+                                }
                             </div>
 
                             {/* <!-- Modal body --> */}
@@ -170,23 +216,23 @@ function Technician() {
                                     <div>
                                         <input type='text' name='name' placeholder="Enter Name" value={adddata.name} onChange={(e) => getInputValues(e, 'name')} />
                                         {
-                                            (!adddata.name&&tabledata.showError) ?
-                                            <div  className="error_mgs">Enter Name</div> :''
+                                            (!adddata.name && tabledata.showError) ?
+                                                <div className="error_mgs">Enter Name</div> : ''
                                         }
                                     </div>
                                     <div>
                                         <input type='text' name='location' placeholder="Enter Location" value={adddata.location} onChange={(e) => getInputValues(e, 'location')} />
                                         {
-                                            (!adddata.location&&tabledata.showError) ?
-                                            <div  className="error_mgs">Enter Location</div> :''
+                                            (!adddata.location && tabledata.showError) ?
+                                                <div className="error_mgs">Enter Location</div> : ''
                                         }
                                     </div>
                                     <div>
-                                    <input  type="text" name="number" placeholder="Enter Number" value={adddata.number} onChange={(e) => getInputValues(e, 'number')}
-                onKeyPress={onlyNumbers} />
-                 {
-                                            (!adddata.phone_number&&tabledata.showError) ?
-                                            <div  className="error_mgs">Enter Phone Number</div> :''
+                                        <input type="text" name="number" placeholder="Enter Number" value={adddata.number} onChange={(e) => getInputValues(e, 'number')}
+                                            onKeyPress={onlyNumbers} />
+                                        {
+                                            (!adddata.phone_number && tabledata.showError) ?
+                                                <div className="error_mgs">Enter Phone Number</div> : ''
                                         }
                                         {/* <input type='text' name='phone_number' placeholder="Enter Phone Number" value={adddata.phone_number} onChange={(e) => onlyNumbers(e, 'phone_number')} /> */}
                                     </div>
@@ -266,7 +312,10 @@ function Technician() {
                                                 <td>{data.phone_number}</td>
 
                                                 <td>
-                                                    <button className="btn-primary">Edit</button>
+                                                    {/* <button className="btn-primary" onClick={AddTechnician}>Edit</button> */}
+                                                    <button className=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"
+                        type="button" name="tech_btn" onClick={AddTechnician}>
+                       Edit</button>
                                                     <button className="btn-danger" onClick={() => Delete(index)}>Delete</button>
                                                 </td>
 
