@@ -8,16 +8,19 @@ export default function AuthReducer(state = initialState, action = null) {
   }
   switch (action.type) {
     case AuthTypes.LOGIN_SUCCESS: {
-      const { token } = action.data;
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(action.data));
+      // const { token } = action.data;
+
+      localStorage.setItem("token", 123);
+      // localStorage.setItem("user", JSON.stringify(action.data));
       return {
-        ...action.data,
+        // ...action.data,
       };
     }
     case AuthTypes.LOGOUT_SUCCESS: {
       localStorage.clear();
-      return initialState;
+      return {
+        
+      }
     }
     default:
       return state;

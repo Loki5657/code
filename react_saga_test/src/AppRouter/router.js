@@ -4,6 +4,7 @@ import Login from "../Components/login";
 import PublicRoute from '../Components/public/public_routes';
 import PrivateRoute from "../Components/private/private_routes";
 import Dashboard from '../Components/dashboard';
+import Profile from "../Components/profile";
 
 
 
@@ -18,6 +19,7 @@ export default function Router() {
         <Route path="/" element={<Login/>} />  
           <Route path="/login" element={<PublicRoute><Login/></PublicRoute>} />
           <Route path="/dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
+          <Route path="/dashboard/:id" element={<PrivateRoute><Profile/></PrivateRoute>} />
           
 
         </Routes>

@@ -1,0 +1,21 @@
+import { DashboardTypes } from "../action_types/dashboard_types";
+
+const initialState = {
+  UserDataRequests: [],
+};
+
+export default function DashboardReducer(state = initialState, action = null) {
+  if (!state) {
+    state = initialState;
+  }
+  switch (action.type) {
+    case DashboardTypes.USER_DATA_REQUEST_SUCCESS: {
+      return {
+        ...state,
+        UserDataRequests: action.data
+      };
+    }
+    default:
+      return state;
+  }
+}

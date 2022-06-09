@@ -1,9 +1,8 @@
 import React from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function PrivateRoute(props) {
     const hasToken = localStorage.getItem("token");
-  
   
     if (!hasToken) {
       return <Navigate to="/login" replace />;
