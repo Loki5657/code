@@ -7,6 +7,7 @@ import Profile from './profile'
 
 
 
+
 const Dashboard = (props) => {
 
   let { user } = useParams();
@@ -79,7 +80,7 @@ const Dashboard = (props) => {
       </div>
 
       <button onClick={Logout}>Logout</button>
-      <Profile />
+      <Profile data={list} />
     </div>
   )
 }
