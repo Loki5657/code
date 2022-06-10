@@ -9,13 +9,13 @@
 <body>
 <table>
 <tr>
-<td> <input type="text" name="a" id="first" placeholder="Enter character"/> </td>
+<td> <input type="text" name="a" id="first" placeholder="Enter character" max="1"/> </td>
 </tr>
 <tr>
-<td> <button onclick = "vowel()">Submit</button> </td>
+<td> <button onclick = "vowel()">check</button> </td>
 </tr>
 </table>
-<div id="num"></div>
+<div id="char"></div>
 </body>
 
 <script >
@@ -36,11 +36,11 @@ case 'u':
 // case 'I':
 // case 'O':
 // case 'U':
-document.getElementById("num"). innerHTML;
-console.log("entered text is vowel",ch)
+document.getElementById("char"). innerHTML;
+console.log("entered text is vowel",true)
 break;
-default: document.getElementById("num"). innerHTML;
-console.log("entered text is not vowel",ch)
+default: document.getElementById("char"). innerHTML;
+console.log("entered text is not vowel",false)
 break;
 }
 }

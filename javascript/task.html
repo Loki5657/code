@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>difference</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Enter a value"/>
+    <button onclick="difference()">difference</button>
+    <script>
+  function difference()
+			{
+			
+		num = Number(document.getElementById("num").value);
+        var num;
+        if(num<=10){
+            var result=10-num
+        console.log("given number is <10",result)
+
+        }
+        else{
+            var result=(num-10)*2
+            console.log("given number is >10",result)
+
+        }
+        }
+    </script>
+    
+</body>
+</html>
