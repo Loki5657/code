@@ -1,26 +1,56 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { DashboardTypes } from '../redux/action_types/dashboard_types';
 
 //get user by id
 // https://reqres.in/api/users/2
 
-const Profile = (props) => {
-  const {id} = useParams();
-  console.log(id);
+const Profile = () => {
+  const dashboardReduxData = useSelector((state) => state.Dashboard);
 
-  const getData = () => {
-   
+  const dispatch = useDispatch();
+  const { id } = useParams();
+
+  const getData = async () => {
+    // const url=`https://reqres.in/api/users/${id}`
+    // const res= await axios.get(url)
+
+
+    dispatch({
+      type: DashboardTypes.PERSON_REQUST, data: { id },
+      callback: () => {
+
+      },
+
+    })
+
   }
 
   useEffect(() => {
     getData();
   }, [id])
+
+  const user = dashboardReduxData.Persondata;
+  console.log("list", user)
   return (
-    <div>
-  
+    <div className='flx'>
+
+      {
+        user && <div className='user_dts center'>
+          <div>First Name:{user.first_name}</div>
+          <div>Last Name:{user.last_name}</div>
+          <div>Email:{user.email}</div>
+
+        
+        
+        </div>
+        
+
+      }
+
+
     </div>
   )
 }

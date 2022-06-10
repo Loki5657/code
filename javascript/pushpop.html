@@ -19,17 +19,15 @@
     <button onclick=" log()">Log</button>
     <button onclick=" sum()">Sum</button>
     <script>
-        var num, array, total=0;
+        var num, array, total = 0;
 
         array = new Array();
 
         function push() {
-        num = Number(document.getElementById("num").value);
-
+            num = Number(document.getElementById("num").value);
             array.push(num)
-
             console.log(array)
-
+            document.getElementById("num").value=" ";
 
         }
         function pop() {

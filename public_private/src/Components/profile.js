@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
 
 
-const Profile = (id) => {
-  const [state, setState] = useState()
-  const count = useSelector((state) => state.usersDataSlicer)
-  const data = () => {
-    setState(count)
+const Profile = () => {
+  const {id}=useParams()
+  console.log(id);
+  const getUserData = () => {
+   
     console.log("s", id);
   }
 
-  console.log("x", state)
+ 
   useEffect(() => {
-    data()
+    getUserData()
   }, [])
 
 

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthTypes } from '../redux/action_types/auth_types';
 import { DashboardTypes } from '../redux/action_types/dashboard_types';
-import Profile from './profile'
+import '../Styles/styles.css'
 
 
 
@@ -80,7 +80,7 @@ const Dashboard = (props) => {
       </div>
 
       <button onClick={Logout}>Logout</button>
-      <Profile data={list} />
+     
     </div>
   )
 }

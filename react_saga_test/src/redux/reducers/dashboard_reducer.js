@@ -15,6 +15,12 @@ export default function DashboardReducer(state = initialState, action = null) {
         UserDataRequests: action.data
       };
     }
+    case DashboardTypes.PERSON_REQUST_SUCCESS: {
+      return {
+        ...state,
+        Persondata: action.data
+      };
+    }
     default:
       return state;
   }

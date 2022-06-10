@@ -6,7 +6,7 @@ import Dashboard from "../Components/dashboard";
 import Googlelogin from "../Googlelogin";
 import PublicRoute from '../Components/public/public_routes'
 import Profile from "../Components/profile";
-import Login_app from "../Components/login2";
+
 
 
 

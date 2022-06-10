@@ -26,6 +26,13 @@
             num2 = Number(document.getElementById("num2").value);
             num3 = Number(document.getElementById("num3").value);
             console.log(num1)
+            let arr=new Array();
+            arr.push(num1)
+            arr.push(num2)
+            arr.push(num3)
+            const max=Math.max(arr)
+            console.log(arr)
+            console.log("C",max)
 
             if (num1 > num2 && num1 > num3) {
                 console.log(num1 + "- is largest number among", num1, num2, num3);

@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>child component</title>
 </head>
-<body id="body">
-    <button id="div" onclick="Div()" >div</button>
 
-    <button id="h1"   onclick="H1()">h1</button>
-    <button id="p"   onclick="Ptag()" >p</button>
-    <button id="a" onclick="Atag()" >a</button>
-    <button id="ul"onclick="Ul()" >ul</button>
-    <button id="log"onclick="Log()" >List</button>
+<body id="body">
+    <button id="div" onclick="Div()">div</button>
+
+    <button id="h1" onclick="H1()">h1</button>
+    <button id="p" onclick="Ptag()">p</button>
+    <button id="a" onclick="Atag()">a</button>
+    <button id="ul" onclick="Ul()">ul</button>
+    <button id="log" onclick="Log()">List</button>
 
     <div>
 
     </div>
-<script>
-    function Div(){
-        var div=document.createElement("div");
-        // div.innerHTML="hii"
-        div.setAttribute("id","continer");
-        document.body.append(div);
-    }
-    function H1(){
-        var h1=document.createElement("h1");
-     var div= document.getElementById("continer")
-     h1.innerHTML="h1tag";
-     div.append(h1) 
-    }
-    function Ptag(){
-        var ptag=document.createElement("p")
-        var div=document.getElementById("continer")
-        ptag.innerHTML="ptag"
-        div.append(ptag)
+    <script>
+        function Div() {
+            var div = document.createElement("div");
+            // div.innerHTML="hii"
+            div.setAttribute("id", "continer");
+            document.body.append(div);
+        }
+        function H1() {
+            var h1 = document.createElement("h1");
+            var div = document.getElementById("continer")
+            h1.innerHTML = "h1tag";
+            div.append(h1)
+        }
+        function Ptag() {
+            var ptag = document.createElement("p")
+            var div = document.getElementById("continer")
+            ptag.innerHTML = "ptag"
+            div.append(ptag)
 
-    }
-    function Atag(){
-        var atag=document.createElement("a")
-        var div=document.getElementById("continer")
-        atag.innerHTML="atag"
-        div.append(atag)
+        }
+        function Atag() {
+            var atag = document.createElement("a")
+            var div = document.getElementById("continer")
+            atag.innerHTML = "atag"
+            div.append(atag)
 
-    }
-    function Ul(){
-        var ul=document.createElement("ul")
-        var div=document.getElementById("continer")
-        ul.innerHTML="ultag"
-        div.append(ul)
+        }
+        function Ul() {
+            var ul = document.createElement("ul")
+            var div = document.getElementById("continer")
+            ul.innerHTML = "ultag"
+            div.append(ul)
 
-    }
-    function Log(){
-        var out=document.querySelector("continer")
+        }
+        function Log() {
+            var ul = document.createElement("ul")
+            var div = document.getElementById("continer")
+            ul.innerHTML = "ultag"
+            div.append(ul)
+             
 
-      
-       console.log(out)
-    }
+            // console.log(out)
+        }
 
 
-</script>
-    
+    </script>
+
 </body>
+
 </html>

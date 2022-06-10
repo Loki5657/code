@@ -43,29 +43,19 @@
                 num = document.getElementById("num").value;
                 if (!num) {
                     alert("please enter text");
-
+                 return;
                 }
+                else{
                 // console.log(num)
-
                 array.push(num)
-
                 document.getElementById('num').value = '';
-
                 console.log(array)
-
-
                 const div = document.getElementById('div');
-
                 const ptag = document.createElement('p');
-
                 ptag.setAttribute("id", "ptag")
-
                 let btn = document.createElement("button");
-
                 btn.addEventListener('click', delItem);
-
                 btn.innerHTML = "Delete";
-
                 btn.name = "formBtn";
                 btn.className = " btn-danger"
                 ptag.innerHTML = num;
@@ -73,7 +63,7 @@
 
                 ptag.append(btn);
                 div.append(ptag);
-
+                }
             }
 
 

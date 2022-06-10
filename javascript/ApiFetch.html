@@ -17,9 +17,12 @@
                 <th>Title</th>
                 <th>Url</th>
                 <th>ThumbnailUrl</th>
+                <th>data</th>
             </tr>
         </thead>
-        <tbody id="tbody"></tbody>
+        <tbody id="tbody">
+            
+        </tbody>
     </table>
 
     <script>
@@ -41,11 +44,15 @@
                 td3.innerHTML = output.title
                 const td4 = document.createElement('td');
                 td4.innerHTML = output.url
+                const t5=document.createElement('td');
+                td5.innerHTML=output.id
                 tr.append(td1);
                 tr.append(td2);
                 tr.append(td3);
                 tr.append(td4);
-                tbody.append(tr)
+                tr.append(td5)
+                tbody.append(tr);
+
                 
                 const td5 = document.createElement('td');
                  const img = document.createElement('img')
