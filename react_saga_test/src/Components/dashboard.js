@@ -46,15 +46,12 @@ const Dashboard = (props) => {
     <div className='flx'>
 
       <div className="inner_div">
-        <table className="table table-striped">
-          <thead className="thead-dark">
+        <table class="table table-striped">
+          <thead>
             <tr>
-              <th>First  Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-
-
-              {/* <th>Country</th> */}
+            <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
             </tr>
           </thead>
           <tbody>
@@ -64,7 +61,7 @@ const Dashboard = (props) => {
               list && list.map((data, index) => {
                 return (
 
-                  <tr key={index}  onClick={() => navigate(`/dashboard/${data.id}`)}>
+                  <tr scope="row" key={index} onClick={() => navigate(`/profile/${data.id}`)}>
                     <td>{data.first_name}</td>
                     <td>{data.last_name}</td>
                     <td>{data.email}</td>
@@ -80,7 +77,7 @@ const Dashboard = (props) => {
       </div>
 
       <button onClick={Logout}>Logout</button>
-     
+
     </div>
   )
 }

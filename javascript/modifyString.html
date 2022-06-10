@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check</title>
+    <title>modifyString</title>
 </head>
 
 <body>
@@ -20,10 +20,16 @@
 
             str = document.getElementById("first").value;
             strUP = str.toUpperCase()
-          
-            
+            let len = str.length
 
+            var first = str.charAt(0)
+            var last = str.slice(-1)
+            let middle = parseInt(len / 2);
            
+           
+            console.log(" Modified string",first+str[middle]+last);
+
+
 
 
         }

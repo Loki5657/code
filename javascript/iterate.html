@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check</title>
+    <title>iterate</title>
 </head>
 
 <body>
     <input type="text" id="num" placeholder="Enter a value" />
+    <button onclick="push()">push</button>
     <button onclick="iterate()">iterate</button>
-
-
-    <button onclick="push()">check</button>
     <script>
         array = new Array();
 
@@ -24,9 +22,17 @@
             document.getElementById("num").value = " ";
         }
         function iterate(){
-            array.map((each)=>{
-                
-            })
+            NewArry=new Array()
+           for(let i=0;i<=array.length;i++){
+              arr=array[i]*2
+              if(arr>=10){
+                let newarr=arr*4
+                console.log("its just",newarr)
+              }
+              else{
+                console.log(arr) 
+              }
+           }
         }
     </script>
 

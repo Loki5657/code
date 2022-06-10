@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { AuthTypes } from '../redux/action_types/auth_types';
 import { Button } from 'react-bootstrap';
+import '../Styles/styles.css'
 
 
 
@@ -35,7 +36,7 @@ const Login = () => {
 
   return (
     <div>
-      <Button type='submit' onClick={submit}>Login</Button>
+      <Button className='center' type='submit' onClick={submit}>Login</Button>
     </div>
   )
 }

@@ -39,9 +39,9 @@ const Profile = () => {
 
       {
         user && <div className='user_dts center'>
-          <div>First Name:{user.first_name}</div>
-          <div>Last Name:{user.last_name}</div>
-          <div>Email:{user.email}</div>
+          <div className='center'>First Name:<span className= "text">{user.first_name}</span></div>
+          <div className='center text2'>Last Name:<span className= "text ">{user.last_name}</span></div>
+          <div className='center'>Email:<span className= "text">{user.email}</span></div>
 
         
         
