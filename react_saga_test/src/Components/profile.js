@@ -36,6 +36,7 @@ const Profile = () => {
   console.log("list", user)
   return (
     <div className='flx'>
+      <h2 className='user_dtsr center'>Profile Details</h2>
 
       {
         user && <div className='user_dts center'>

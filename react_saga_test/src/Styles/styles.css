@@ -6,7 +6,13 @@
     padding-top: 20px;
     font-weight: bold;
 }
+.user_dtsr {
 
+    color: blue;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
 .center {
     margin: auto;
     padding: 10px;

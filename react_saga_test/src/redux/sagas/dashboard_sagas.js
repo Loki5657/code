@@ -29,6 +29,9 @@ function* userRequest(data,callback){
         // const url = `${process.env.REACT_APP_API_URL}/users`
         const res=yield axios.get(url)
         yield put({type:DashboardTypes.PERSON_REQUST_SUCCESS,data: res.data.data})
+
+
+        
         console.log('dash_saga',res.data.data)
         callback(true);
     }
