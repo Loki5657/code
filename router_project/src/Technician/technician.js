@@ -119,7 +119,7 @@ function Technician() {
 
         }
 
-       
+
     }
     const [adddata, setAdddata] = useState({
         name: '',
@@ -139,13 +139,10 @@ function Technician() {
 
     const AddTechnician = () => {
         console.log("we are in adding Technician ");
-
-
     }
 
     const getInputValues = (e, AddTechnician) => {
         setAdddata({ ...adddata, [AddTechnician]: e.target.value })
-
     }
 
     // console.log("enterd data",adddata);
@@ -153,18 +150,13 @@ function Technician() {
         const charCode = e.which ? e.which : e.keyCode;
         if (charCode > 31 && (charCode < 48 || charCode > 57)) {
             e.preventDefault();
-
-
         }
         return true;
-
     }
+
     const Edit = (data) => {
         setIsAdd(false)
         setAdddata(data)
-        
-
-
     }
 
 
@@ -314,8 +306,8 @@ function Technician() {
                                                 <td>
                                                     {/* <button className="btn-primary" onClick={AddTechnician}>Edit</button> */}
                                                     <button className=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"
-                        type="button" name="tech_btn" onClick={AddTechnician}>
-                       Edit</button>
+                                                        type="button" name="tech_btn" onClick={AddTechnician}>
+                                                        Edit</button>
                                                     <button className="btn-danger" onClick={() => Delete(index)}>Delete</button>
                                                 </td>
 

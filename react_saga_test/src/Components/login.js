@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div>
-      <Button className='center' type='submit' onClick={submit}>Login</Button>
+      <Button className='center2' type='submit' onClick={submit}>Login</Button>
     </div>
   )
 }

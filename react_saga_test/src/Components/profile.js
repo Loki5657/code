@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { DashboardTypes } from '../redux/action_types/dashboard_types';
 
 //get user by id
@@ -9,7 +9,7 @@ import { DashboardTypes } from '../redux/action_types/dashboard_types';
 
 const Profile = () => {
   const dashboardReduxData = useSelector((state) => state.Dashboard);
-
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { id } = useParams();
 
@@ -35,23 +35,22 @@ const Profile = () => {
   const user = dashboardReduxData.Persondata;
   console.log("list", user)
   return (
-    <div className='flx'>
-      <h2 className='user_dtsr center'>Profile Details</h2>
+    <div>
+      <div className='flx'>
+        <h2 className='user_dtsr center'>User Details</h2>
 
-      {
-        user && <div className='user_dts center'>
-          <div className='center'>First Name:<span className= "text">{user.first_name}</span></div>
-          <div className='center text2'>Last Name:<span className= "text ">{user.last_name}</span></div>
-          <div className='center'>Email:<span className= "text">{user.email}</span></div>
-
-        
-        
-        </div>
-        
-
-      }
+        {
+          user && <div className='user_dts center'>
+            <div className='center'><img src={user.avatar} className="text" /></div>
+            <div className='center'>First Name:<span className="text">{user.first_name}</span></div>
+            <div className='center text2'>Last Name:<span className="text ">{user.last_name}</span></div>
+            <div className='center'>Email:<span className="text">{user.email}</span></div>
+          </div>
+        }
 
 
+      </div>
+      <a className='center2' href='' onClick={() => navigate('/dashboard')}>Back to Dashboard Page</a>
     </div>
   )
 }

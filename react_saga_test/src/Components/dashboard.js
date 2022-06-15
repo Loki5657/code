@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { AuthTypes } from '../redux/action_types/auth_types';
 import { DashboardTypes } from '../redux/action_types/dashboard_types';
 import '../Styles/styles.css'
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -44,12 +45,11 @@ const Dashboard = (props) => {
   const list = dashboardReduxData.UserDataRequests;
   return (
     <div className='flx'>
-
       <div className="inner_div">
         <table class="table table-striped">
           <thead>
             <tr>
-            <th scope="col">First Name</th>
+              <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
               <th scope="col">Email</th>
             </tr>
@@ -57,14 +57,14 @@ const Dashboard = (props) => {
           <tbody>
 
             {
-
               list && list.map((data, index) => {
                 return (
 
-                  <tr scope="row" key={index} onClick={() => navigate(`/profile/${data.id}`)}>
-                    <td>{data.first_name}</td>
-                    <td>{data.last_name}</td>
-                    <td>{data.email}</td>
+                  <tr scope="row" key={index} >
+                    <td onClick={() => navigate(`/profile/${data.id}`)}>{data.first_name}</td>
+                    <td onClick={() => navigate(`/profile/${data.id}`)}>{data.last_name}</td>
+                    <td onClick={() => navigate(`/profile/${data.id}`)}>{data.email}</td>
+                    <Button variant='primary'>Edit</Button>
                   </tr>
                 );
               }
